@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="415216" started-at="2018-05-23T13:47:34Z" finished-at="2018-05-23T13:54:29Z">
+  <suite name="Default suite" duration-ms="41656" started-at="2018-06-18T11:26:46Z" finished-at="2018-06-18T11:27:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="415216" started-at="2018-05-23T13:47:34Z" finished-at="2018-05-23T13:54:29Z">
-      <class name="Framework.TestNG_Demo">
-        <test-method status="PASS" signature="searcpatient()[pri:1, instance:Framework.TestNG_Demo@523884b2]" name="searcpatient" duration-ms="123132" started-at="2018-05-23T13:47:34Z" description="Will verify the search patient functions" finished-at="2018-05-23T13:49:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searcpatient -->
-        <test-method status="FAIL" signature="testDAtePicker()[pri:2, instance:Framework.TestNG_Demo@523884b2]" name="testDAtePicker" duration-ms="292029" started-at="2018-05-23T13:49:37Z" description="Will verify the appintment create functions" finished-at="2018-05-23T13:54:29Z">
+    <test name="Default test" duration-ms="41656" started-at="2018-06-18T11:26:46Z" finished-at="2018-06-18T11:27:28Z">
+      <class name="Framework.New_Appointment">
+        <test-method status="FAIL" signature="testDAtePicker()[pri:0, instance:Framework.New_Appointment@61832929]" name="testDAtePicker" duration-ms="41601" started-at="2018-06-18T11:26:46Z" finished-at="2018-06-18T11:27:28Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
-System info: host: 'GIRISH-PC', ip: '192.168.16.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
-Driver info: driver.version: unknown]]>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='AppointmentDate']"}
+Command duration or timeout: 0 milliseconds]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: 
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
-System info: host: 'GIRISH-PC', ip: '192.168.16.55', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-at AppModule.Create_Appointment.Execute(Create_Appointment.java:81)
-at Framework.TestNG_Demo.testDAtePicker(TestNG_Demo.java:68)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='AppointmentDate']"}
+Command duration or timeout: 0 milliseconds
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+at pageObjects.Home_Page.Txt_Appointment_Date(Home_Page.java:29)
+at AppModule.Create_Appointment.Execute(Create_Appointment.java:70)
+at Framework.New_Appointment.testDAtePicker(New_Appointment.java:73)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -54,13 +60,20 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='AppointmentDate']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'GIRISH-PC', ip: '192.168.16.76', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: driver.version: unknown
+at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Girish/AppData/Local/Temp/anonymous3999043885329961257webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:11884)
+at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Girish/AppData/Local/Temp/anonymous3999043885329961257webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:918)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDAtePicker -->
-      </class> <!-- Framework.TestNG_Demo -->
+      </class> <!-- Framework.New_Appointment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

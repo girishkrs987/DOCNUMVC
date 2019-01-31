@@ -1,7 +1,7 @@
 package utility;
 
 public class Constant {
-	public static final String URL = "http://106.51.227.33:83/DoctorLogin/DoctorLogin";
+	public static final String URL = "http://beta.docnu.com/DoctorLogin/DoctorLogin";
 	//public static final String URL = "http://beta.docnu.com/";
 	
 	 

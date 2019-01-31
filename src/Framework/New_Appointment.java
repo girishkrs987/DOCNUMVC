@@ -73,7 +73,7 @@ public class New_Appointment {
    Create_Appointment.Execute(driver);
    
    System.out.println("Appointment has been created sucessfully");
-   
+   driver.quit();
         }
     
    

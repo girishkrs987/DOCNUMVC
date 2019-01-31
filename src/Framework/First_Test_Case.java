@@ -64,8 +64,8 @@ public class First_Test_Case {
   //ExcelUtils.setExcelFile("xl","Sheet");
  // Thread.sleep(2000);
   Patient_registeration.Execute(driver);
-    // Logout.Execute(driver);
- // System.out.println(" Logout Successfully");
+    Logout.Execute(driver);
+ System.out.println(" Logout Successfully");
      
    //  ExcelUtils.setCellData("Pass", 1, 3);
 	        

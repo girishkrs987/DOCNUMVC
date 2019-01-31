@@ -72,6 +72,8 @@ private static WebDriver driver = null;
    Search_Patient.Execute(driver);
    
    Log.info("Search Patient function sucessful");
+   
+   driver.quit();
 	}
 
 }

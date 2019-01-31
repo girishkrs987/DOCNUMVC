@@ -8,7 +8,9 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import pageObjects.LogIn_Page;
 import utility.Constant;
@@ -24,6 +26,17 @@ public class Create_Appointment {
 		
 	//	public void Newappointmnet Execute (WebDriver driver)throws Exception  {
 		
+		
+		
+	
+		
+		String msg =driver.getTitle();
+		
+		System.out.println(msg);
+		
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		
+	    wait.until(ExpectedConditions.titleContains("ll"));
 		
 		 String xl = Constant.Path_TestData + Constant.File_TestData;
 
@@ -66,6 +79,10 @@ public class Create_Appointment {
 		    String Day="16";*/
 		    
 		   // driver.findElement(By.xpath("//*[@id='AppointmentDate']")).click();
+		    
+		    
+		    
+		    
 		    Thread.sleep(2000);
 		    Home_Page.Txt_Appointment_Date(driver).click();
 			   

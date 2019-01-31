@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <parameter name="Username" value="9972921986"/>
+  <parameter name="Password" value="U$Q3mDku"/>
+    <classes>
+      <class name="Framework.VerifyBookAppointmentTest"/>
+      
+      <class name="Framework.VerifyBookAppointmentTestTest"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
